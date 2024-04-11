@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="آن راه حل ها &amp; خدمات تجاری پاسخگو HTML5 Bootstrap5 الگوی وب سایت">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- fav icon -->
+        <link rel="icon" href="images/fav-icon/fav-icon.png">
+        
+        <!-- bootstarp -->
+        <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+        
+        <!-- animate.css file -->
+        <link rel="stylesheet" href="css/vendors/animate.css">
+        
+        <!-- flaticon -->
+        <link rel="stylesheet" href="css/vendors/flaticon/flaticon.css">
+        
+        <!-- fontAwesome -->
+        <link rel="stylesheet" href="css/vendors/all.min.css">
+        
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+        
+        <!-- Font Family -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+        
+        <!-- main-LTR -->
+        <link rel="stylesheet" href="css/main.css">
+        <title> flex-IT   |   پرسش و پاسخ</title>
+  </head>
+  <body class=" dark-theme">
+    <!--Start Page Header-->
+    <header class=" page-header   inner-page-header header-basic" id="page-header">
+      <div class="header-search-box">
+        <div class="close-search"></div>
+        <form class="nav-search search-form" role="search" method="get" action="#">
+          <div class="search-wrapper"> 
+                        <label class="search-lbl">جستجو کردن:</label>
+            <input class="search-input" type="search" placeholder="جستجو کردن..." name="searchInput" autofocus="autofocus"/>
+            <button class="search-btn" type="submit"><i class="bi bi-search icon"></i></button>
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <nav class="menu-navbar">
+          <div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy" src="images/logo/logo-light.png" alt="لوگو"/><img class="logo-img dark-logo" loading="lazy" src="images/logo/logo-dark.png" alt="لوگو"/></a></div>
+          <div class="links menu-wrapper">
+            <ul class="list-js links-list">
+              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">خانه <i class="fas fa-plus plus-icon"> </i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-1.html">خانه 1</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-2.html">خانه 2</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-3.html">خانه 3 [ اسلایدر سبک 1 ]</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-4.html">خانه 4 [ اسلایدر سبک 2 ]</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a class="menu-link" href="about-us.html">درباره ما </a></li>
+              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">خدمات<i class="fas fa-plus plus-icon"> </i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="services.html">خدمات</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="service-single.html">سرویس مجرد</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">نمونه کار <i class="fas fa-plus plus-icon"> </i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-grid.html">نمونه کار توری</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-blocks.html">نمونه کار بلوک</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-slider.html">نمونه کار لغزنده</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-single.html">نمونه کار تنها</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">بلاگ<i class="fas fa-plus plus-icon"> </i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="blog-home-1-col.html">بلاگ خانه 1 ستونی</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="blog-home-2-col.html">بلاگ خانه 2 ستونی</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="blog-home-3-col.html">بلاگ خانه 3 ستونی</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="post-single.html">پست تکی</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">صفحات<i class="fas fa-plus plus-icon"> </i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="pricing.html">جداول قیمت گذاری</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="our-team.html">تیم ما</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="team-member.html">اعضای تیم</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="faq.html">پرسش و پاسخ</a></li>
+                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="404.html">صفحه 404</a></li>
+                </ul>
+              </li>
+              <li class="menu-item"><a class="menu-link" href="contact-us.html">تماس با ما </a></li>
+            </ul>
+          </div>
+          <div class="controls-box">
+            <!--Menu Toggler button-->
+            <div class="control  menu-toggler"><span></span><span></span><span></span></div>
+            <!--search Icon button-->
+            <div class="control header-search-btn"><i class="bi bi-search icon"></i></div>
+            <!--Dark/Light mode button-->
+            <div class="mode-switcher">
+              <div class="switch-inner go-light" title="تغییر به حالت روشن"><i class="bi bi-sun icon"></i></div>
+              <div class="switch-inner go-dark" title="تغییر به حالت تیره"><i class="bi bi-moon icon"></i></div>
+            </div>
+            <!--mini shoping cart-->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--End Page Header-->
+    <!-- Start inner Page hero-->
+    <section class="d-flex align-items-center page-hero  inner-page-hero" id="page-hero">
+      <div class="overlay-photo-image-bg parallax" data-bg-img="images/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
+      <div class="overlay-color" data-bg-opacity=".75"></div>
+      <div class="container">
+        <div class="hero-text-area centerd">
+          <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">پرسش و پاسخ ها</h1>
+          <nav aria-label="breadcrumb">
+            <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
+              <li class="breadcrumb-item"><a class="breadcrumb-link" href="#0"><i class="bi bi-house icon"></i>خانه</a></li>
+              <li class="breadcrumb-item active">پرسش و پاسخ</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- End inner Page hero-->
+    <!-- Start  faq-1 section-->
+    <section class="faq mega-section" id="faq">
+      <div class="shape-top-left"></div>
+      <div class="shape-bottom-right"></div>
+      <div class="pattern-top-end-dir"></div>
+      <div class="pattern-bottom-start-dir"></div>
+      <div class="container">
+        <div class="sec-heading  centered">
+          <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">پرسش و پاسخ ها</span>
+            <h2 class=" title   wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>مکررا </span> سؤالات پرسیده شده </h2>
+          </div>
+        </div>
+        <!--Start Accordion List For FAQ-->
+        <div class="faq-accordion" id="accordion">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="card mb-2">
+                <div class="card-header" id="heading-1">
+                  <h5 class="mb-0 faq-title">
+                    <button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">آیا استفاده از خدمات شما آسان است؟</button>
+                  </h5>
+   </div>
+                <div class="collapse" id="collapse-1" aria-labelledby="collapse-1" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="faq-answer">mhmd، ذهن آماده انتقاد از کلیشه است، زیرا این زندگی بالاست
+          ما تری ریچاردسون را به ماهی مرکب متهم می کنیم. 3 سرویس ماه گرگ
+          ولی
+          نه میل به اسکیت سواری، بلکه میل به صبحانه. کینوا کامیون مواد غذایی
+          آنها نمی دانند
+          از این قبیل کارها برانچ 3 گرگ زمان ماه، برخی از قرار دادن وجود دارد
+          آ
+          پرنده روی آن ماهی مرکب قهوه تک منشا بدون فرض
+          کوتاه کردن
+          و جای نگرانی نیست keffiyeh سوئیس، آبجو صنایع دستی کار سخت
+          اندرسون
+          من معتقدم آنها نمی دانند که عاقل هستند. به جز وگان ها
+          قصاب
+          چرخش لومو شلوار لی تیره آبجو دستی مزرعه تا میز. </p>
+     </div>
+   </div>
+ </div>
+              <div class="card mb-2">
+                <div class="card-header" id="heading-2">
+                  <h5 class="mb-0 faq-title">
+                    <button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">آیا به روز رسانی های آینده را دریافت خواهم کرد؟</button>
+                  </h5>
+   </div>
+                <div class="collapse" id="collapse-2" aria-labelledby="collapse-2" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="faq-answer">mhmd، ذهن آماده انتقاد از کلیشه است، زیرا این زندگی بالاست
+          ما تری ریچاردسون را به ماهی مرکب متهم می کنیم. 3 سرویس ماه گرگ
+          ولی
+          نه میل به اسکیت سواری، بلکه میل به صبحانه. کینوا کامیون مواد غذایی
+          آنها نمی دانند
+          از این قبیل کارها برانچ 3 گرگ زمان ماه، برخی از قرار دادن وجود دارد
+          آ
+          پرنده روی آن ماهی مرکب قهوه تک منشا بدون فرض
+          کوتاه کردن
+          و جای نگرانی نیست keffiyeh سوئیس، آبجو صنایع دستی کار سخت
+          اندرسون
+          من معتقدم آنها نمی دانند که عاقل هستند. به جز وگان ها
+          قصاب
+          چرخش لومو شلوار لی تیره آبجو دستی مزرعه تا میز. </p>
+     </div>
+   </div>
+ </div>
+              <div class="card mb-2">
+                <div class="card-header" id="heading-3">
+                  <h5 class="mb-0 faq-title">
+                    <button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">آیا این سرویس در کشور من کار می کند؟</button>
+                  </h5>
+   </div>
+                <div class="collapse" id="collapse-3" aria-labelledby="collapse-3" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="faq-answer">mhmd، ذهن آماده انتقاد از کلیشه است، زیرا این زندگی بالاست
+          ما تری ریچاردسون را به ماهی مرکب متهم می کنیم. 3 سرویس ماه گرگ
+          ولی
+          نه میل به اسکیت سواری، بلکه میل به صبحانه. کینوا کامیون مواد غذایی
+          آنها نمی دانند
+          از این قبیل کارها برانچ 3 گرگ زمان ماه، برخی از قرار دادن وجود دارد
+          آ
+          پرنده روی آن ماهی مرکب قهوه تک منشا بدون فرض
+          کوتاه کردن
+          و جای نگرانی نیست keffiyeh سوئیس، آبجو صنایع دستی کار سخت
+          اندرسون
+          من معتقدم آنها نمی دانند که عاقل هستند. به جز وگان ها
+          قصاب
+          چرخش لومو شلوار لی تیره آبجو دستی مزرعه تا میز. </p>
+     </div>
+   </div>
+ </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card mb-2">
+                <div class="card-header" id="heading-4">
+                  <h5 class="mb-0 faq-title">
+                    <button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">چقدر باید بپردازم؟</button>
+                  </h5>
+   </div>
+                <div class="collapse" id="collapse-4" aria-labelledby="collapse-4" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="faq-answer">mhmd، ذهن آماده انتقاد از کلیشه است، زیرا این زندگی بالاست
+          ما تری ریچاردسون را به ماهی مرکب متهم می کنیم. 3 سرویس ماه گرگ
+          ولی
+          نه میل به اسکیت سواری، بلکه میل به صبحانه. کینوا کامیون مواد غذایی
+          آنها نمی دانند
+          از این قبیل کارها برانچ 3 گرگ زمان ماه، برخی از قرار دادن وجود دارد
+          آ
+          پرنده روی آن ماهی مرکب قهوه تک منشا بدون فرض
+          کوتاه کردن
+          و جای نگرانی نیست keffiyeh سوئیس، آبجو صنایع دستی کار سخت
+          اندرسون
+          من معتقدم آنها نمی دانند که عاقل هستند. به جز وگان ها
+          قصاب
+          چرخش لومو شلوار لی تیره آبجو دستی مزرعه تا میز. </p>
+     </div>
+   </div>
+ </div>
+              <div class="card mb-2">
+                <div class="card-header" id="heading-5">
+                  <h5 class="mb-0 faq-title">
+                    <button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">آیا هزینه های دیگری وجود دارد؟</button>
+                  </h5>
+   </div>
+                <div class="collapse" id="collapse-5" aria-labelledby="collapse-5" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="faq-answer">mhmd، ذهن آماده انتقاد از کلیشه است، زیرا این زندگی بالاست
+          ما تری ریچاردسون را به ماهی مرکب متهم می کنیم. 3 سرویس ماه گرگ
+          ولی
+          نه میل به اسکیت سواری، بلکه میل به صبحانه. کینوا کامیون مواد غذایی
+          آنها نمی دانند
+          از این قبیل کارها برانچ 3 گرگ زمان ماه، برخی از قرار دادن وجود دارد
+          آ
+          پرنده روی آن ماهی مرکب قهوه تک منشا بدون فرض
+          کوتاه کردن
+          و جای نگرانی نیست keffiyeh سوئیس، آبجو صنایع دستی کار سخت
+          اندرسون
+          من معتقدم آنها نمی دانند که عاقل هستند. به جز وگان ها
+          قصاب
+          چرخش لومو شلوار لی تیره آبجو دستی مزرعه تا میز. </p>
+     </div>
+   </div>
+ </div>
+              <div class="card mb-2">
+                <div class="card-header" id="heading-6">
+                  <h5 class="mb-0 faq-title">
+                    <button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6"> چگونه می توانم قرارداد را امضا کنم؟</button>
+                  </h5>
+   </div>
+                <div class="collapse" id="collapse-6" aria-labelledby="collapse-6" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="faq-answer">mhmd، ذهن آماده انتقاد از کلیشه است، زیرا این زندگی بالاست
+          ما تری ریچاردسون را به ماهی مرکب متهم می کنیم. 3 سرویس ماه گرگ
+          ولی
+          نه میل به اسکیت سواری، بلکه میل به صبحانه. کینوا کامیون مواد غذایی
+          آنها نمی دانند
+          از این قبیل کارها برانچ 3 گرگ زمان ماه، برخی از قرار دادن وجود دارد
+          آ
+          پرنده روی آن ماهی مرکب قهوه تک منشا بدون فرض
+          کوتاه کردن
+          و جای نگرانی نیست keffiyeh سوئیس، آبجو صنایع دستی کار سخت
+          اندرسون
+          من معتقدم آنها نمی دانند که عاقل هستند. به جز وگان ها
+          قصاب
+          چرخش لومو شلوار لی تیره آبجو دستی مزرعه تا میز. </p>
+     </div>
+   </div>
+ </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End  faq-1 section-->
+    <!-- Start  take-action Section-->
+    <section class="take-action elf-section has-dark-bg" id="take-action">
+      <div class="overlay-photo-image-bg" data-bg-img="images/sections-bg-images/2.jpg" data-bg-opacity=".25"> </div>
+      <div class="cta-wrapper">
+        <div class="container">
+          <div class="sec-heading  centered mb-0">
+            <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">تماس با ما</span>
+              <h2 class=" title   wow fadeInUp" data-wow-delay=".4s">ارتباط با ما</h2>
+              <p class="subtitle   wow fadeInUp" data-wow-delay=".6s">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت <br>بهترین نوع ارتباط با ما ، تلفنی است.</p>
+            </div>
+          </div>
+          <!--Start .see-more-area-->
+          <div class=" see-more-area wow fadeInUp" data-wow-delay="0.8s"><a class=" btn-solid cta-link" href="contact-us.html">تماس با ما</a></div>
+          <!--End Of .see-more-area        -->
+        </div>
+      </div>
+    </section>
+    <!-- End  take-action Section-->
+    <!-- Start  page-footer Section-->
+    <footer class="page-footer dark-color-footer" id="page-footer">
+      <div class="overlay-photo-image-bg" data-bg-img="images/sections-bg-images/footer-bg-1.jpg" data-bg-opacity=".25"></div>
+      <div class="container">
+        <div class="row footer-cols">
+          <div class="col-12 col-md-8 col-lg-4  footer-col"><img class="img-fluid footer-logo" loading="lazy" src="images/logo/logo-colored.png" alt="لوگو"/>
+            <div class="footer-col-content-wrapper">        
+              <p class="footer-text-about-us">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و 
+              </p>
+            </div>
+            <div class="form-area">
+              <div class="mailchimp-form">
+                <form class="one-field-form" method="post" action="#0">
+                  <div class="field-group">
+                    <label class="email-label" for="email-input"> عضویت در اخبار روزانه ما</label>
+                    <input class="email-input" type="email" value="" name="EMAIL" id="email-input" placeholder="آدرس ایمیل" autocomplete="off"/>
+                    <div class="cta-area">
+                      <input class="btn-solid subscribe-btn" type="submit" value="عضو شوید" name="subscribe"/>
+       </div>
+     </div><span class="email-notice">*ما اطلاعات شخصی شما را به اشتراک نخواهیم گذاشت</span>
+                </form>
+ </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2  footer-col">
+            <h2 class=" footer-col-title">لینک های مفید</h2>
+            <div class="footer-col-content-wrapper">
+              <ul class="footer-menu">
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">گوگل</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">دریبل</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">وابسته به لینکدین</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">ویکی پدیا</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 footer-col">
+            <h2 class=" footer-col-title">منابع</h2>
+            <div class="footer-col-content-wrapper">
+              <ul class="footer-menu">
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">حمایت کردن</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">داشبورد</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">راننده</a>
+                            </li>
+                            <li class="footer-menu-item"><i class="bi bi-arrow-left icon"></i><a class="footer-menu-link" href="#0">پروژه ها</a>
+                            </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12     col-lg-4 footer-col">
+            <h2 class=" footer-col-title">اطلاعات تماس</h2>
+            <div class="footer-col-content-wrapper">       
+              <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">example@support.com</a></div>
+              <div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span class="text-lowercase  info">5 خیابان دوم., آبسی, ونزوئلا, کویر.</span></div>
+              <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+20123456789">+20123456789  </a></div>
+              <div class="contact-info-card">
+                <div class="social-icons">
+                  <div class="sc-wrapper dir-row sc-size-32">
+                    <ul class="sc-list">
+                      <li class="sc-item" title="فیسبوک"><a class="sc-link" href="#0" title="آیکون شبکه اجتمایی"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+                      <li class="sc-item" title="یوتوب"><a class="sc-link" href="#0" title="آیکون شبکه اجتمایی"><i class="fab fa-youtube sc-icon"></i></a></li>
+                      <li class="sc-item" title="اینستاگرام"><a class="sc-link" href="#0" title="آیکون شبکه اجتمایی"><i class="fab fa-instagram sc-icon"></i></a></li>
+                      <li class="sc-item" title="توییتر"><a class="sc-link" href="#0" title="آیکون شبکه اجتمایی"><i class="fab fa-twitter sc-icon"></i></a></li>
+                    </ul>
+     </div>
+   </div>
+ </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex justify-content-start">
+              <p class="creadits">
+                 
+                
+&copy; 1402 طراحی توسط:
+                
+                           <a class="link" href="#">فرهام اقدسی</a>
+              </p>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end">
+              <div class="terms-links"><a href="#0">قوانین و نحوه استفاده </a>
+                | <a href="#0" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">قوانین و مقررات.</a>
+ </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  page-footer Section-->
+    <!-- Start loading-screen Component-->
+    <div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span></div>
+    <!-- End loading-screen Component-->
+    <!-- Start back-to-top Button-->
+    <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon"></i>
+    </div>
+    <!-- End back-to-top Button-->
+    <!-- Start privacy-policy-modal-->
+    <div class="modal privacy-policy-modal fade" id="privacyPolicyModal" aria-labelledby="PrivacyPolicyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h2 class="modal-title" id="PrivacyPolicyModalLabel">قوانین و مقررات عنوان مودال</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <h4>قوانین و مقررات عنوان ایتم در اینجاست </h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان </p>
+            </div>
+            <div class="content">
+              <h4>قوانین و مقررات عنوان ایتم در اینجاست </h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان </p>
+            </div>
+            <div class="content">
+              <h4>قوانین و مقررات عنوان ایتم در اینجاست </h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان </p>
+            </div>
+            <div class="content">
+              <h4>قوانین و مقررات عنوان ایتم در اینجاست </h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان </p>
+            </div>
+            <div class="content">
+              <h4>قوانین و مقررات عنوان ایتم در اینجاست </h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان </p>
+            </div>
+            <div class="content">
+              <h4>قوانین و مقررات عنوان ایتم در اینجاست </h4>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn-solid" type="button" data-bs-dismiss="modal" aria-label="Close">برای بستن کلیک کنید</button>
+            <button class="btn-outline" type="button">انجام بدهید غیر از این</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End privacy-policy-modal-->   
+        
+        <!--     JQuery     -->
+        <script src="js/vendors/jquery-3.6.1.min.js"></script>
+        
+        <!--     bootstrap     -->
+        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        
+        <!--     wow     -->
+        <script src="js/vendors/wow.min.js"></script>
+        
+        <!--     main     -->
+        <script src="js/main.js"></script>
+  </body>
+</html>
