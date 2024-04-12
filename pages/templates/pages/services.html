@@ -1,4 +1,5 @@
 {% extends '__base.html' %}
+{% load static %}
 {% block title %}Services{% endblock title %}
 {% block content %}
     <!-- Start  services Section-->
@@ -84,7 +85,7 @@
     <!-- End  services Section-->
     <!-- Start  testimonials-->
     <section class="testimonials testimonials-1-col   has-dark-bg  mega-section" id="testimonials-img-bg">
-      <div class="overlay-photo-image-bg parallax" data-bg-img="images/sections-bg-images/1.jpg" data-bg-opacity=".25"> </div>
+      <div class="overlay-photo-image-bg parallax" data-bg-img="{% static 'images/sections-bg-images/1.jpg'%}" data-bg-opacity=".25"> </div>
       <div class="container">
         <div class="sec-heading  centered">
           <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">گفت و گو ها</span>
@@ -99,7 +100,7 @@
                 <div class="swiper-slide">
                   <div class="testmonial-card d-flex align-items-center justify-content-center">
                     <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/1.png" alt="First Slide"></div>
+                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/1.png'%}" alt="First Slide"></div>
                       <div class="customer-testimonial">
                         <div class="content">
                           <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
@@ -118,7 +119,7 @@
                 <div class="swiper-slide">
                   <div class="testmonial-card d-flex align-items-center justify-content-center">
                     <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/2.png" alt="First Slide"></div>
+                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/2.png'%}" alt="First Slide"></div>
                       <div class="customer-testimonial">
                         <div class="content">
                           <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
@@ -137,7 +138,7 @@
                 <div class="swiper-slide">
                   <div class="testmonial-card d-flex align-items-center justify-content-center">
                     <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/3.png" alt="First Slide"></div>
+                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/3.png'%}" alt="First Slide"></div>
                       <div class="customer-testimonial">
                         <div class="content">
                           <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .            </p>
@@ -344,7 +345,7 @@
     <!-- End  faq Section-->
     <!-- Start  take-action Section-->
     <section class="take-action elf-section has-dark-bg" id="take-action">
-      <div class="overlay-photo-image-bg" data-bg-img="images/sections-bg-images/2.jpg" data-bg-opacity=".25"> </div>
+      <div class="overlay-photo-image-bg" data-bg-img="{% static 'images/sections-bg-images/2.jpg'%}" data-bg-opacity=".25"> </div>
       <div class="cta-wrapper">
         <div class="container">
           <div class="sec-heading  centered mb-0">

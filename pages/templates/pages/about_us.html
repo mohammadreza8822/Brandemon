@@ -1,99 +1,8 @@
 {% extends '__base.html' %}
+{% load static %}
 {% block title %}About Us{% endblock title %}
 {% block content %}
-    <!--Start Page Header-->
-    <header class=" page-header   inner-page-header header-basic" id="page-header">
-      <div class="header-search-box">
-        <div class="close-search"></div>
-        <form class="nav-search search-form" role="search" method="get" action="#">
-          <div class="search-wrapper"> 
-                        <label class="search-lbl">جستجو کردن:</label>
-            <input class="search-input" type="search" placeholder="جستجو کردن..." name="searchInput" autofocus="autofocus"/>
-            <button class="search-btn" type="submit"><i class="bi bi-search icon"></i></button>
-          </div>
-        </form>
-      </div>
-      <div class="container">
-        <nav class="menu-navbar">
-          <div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy" src="images/logo/logo-light.png" alt="لوگو"/><img class="logo-img dark-logo" loading="lazy" src="images/logo/logo-dark.png" alt="لوگو"/></a></div>
-          <div class="links menu-wrapper">
-            <ul class="list-js links-list">
-              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">خانه <i class="fas fa-plus plus-icon"> </i></a>
-                <ul class="sub-menu">
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-1.html">خانه 1</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-2.html">خانه 2</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-3.html">خانه 3 [ اسلایدر سبک 1 ]</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="home-4.html">خانه 4 [ اسلایدر سبک 2 ]</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a class="menu-link  active" href="about-us.html">درباره ما </a></li>
-              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">خدمات<i class="fas fa-plus plus-icon"> </i></a>
-                <ul class="sub-menu">
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="services.html">خدمات</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="service-single.html">خدمات تکی</a></li>
-                </ul>
-              </li>
-              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">نمونه کار <i class="fas fa-plus plus-icon"> </i></a>
-                <ul class="sub-menu">
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-grid.html">نمونه کار توری</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-blocks.html">نمونه کار بلوک</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-slider.html">نمونه کار لغزنده</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="portfolio-single.html">نمونه کار تنها</a></li>
-                </ul>
-              </li>
-              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">بلاگ<i class="fas fa-plus plus-icon"> </i></a>
-                <ul class="sub-menu">
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="blog-home-1-col.html">بلاگ خانه 1 ستونی</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="blog-home-2-col.html">بلاگ خانه 2 ستونی</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="blog-home-3-col.html">بلاگ خانه 3 ستونی</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="post-single.html">پست تکی</a></li>
-                </ul>
-              </li>
-              <li class="menu-item has-sub-menu"><a class="menu-link" href="#0">صفحات<i class="fas fa-plus plus-icon"> </i></a>
-                <ul class="sub-menu">
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="pricing.html">جداول قیمت گذاری</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="our-team.html">تیم ما</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="team-member.html">اعضای تیم</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="faq.html">پرسش و پاسخ</a></li>
-                  <li class="menu-item sub-menu-item"><a class="menu-link sub-menu-link" href="404.html">صفحه 404</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a class="menu-link" href="contact-us.html">تماس با ما </a></li>
-            </ul>
-          </div>
-          <div class="controls-box">
-            <!--Menu Toggler button-->
-            <div class="control  menu-toggler"><span></span><span></span><span></span></div>
-            <!--search Icon button-->
-            <div class="control header-search-btn"><i class="bi bi-search icon"></i></div>
-            <!--Dark/Light mode button-->
-            <div class="mode-switcher">
-              <div class="switch-inner go-light" title="تغییر به حالت روشن"><i class="bi bi-sun icon"></i></div>
-              <div class="switch-inner go-dark" title="تغییر به حالت تیره"><i class="bi bi-moon icon"></i></div>
-            </div>
-            <!--mini shoping cart-->
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!--End Page Header-->
-    <!-- Start inner Page hero-->
-    <section class="d-flex align-items-center page-hero  inner-page-hero" id="page-hero">
-      <div class="overlay-photo-image-bg parallax" data-bg-img="images/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
-      <div class="overlay-color" data-bg-opacity=".75"></div>
-      <div class="container">
-        <div class="hero-text-area centerd">
-          <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">درباره ما</h1>
-          <nav aria-label="breadcrumb">
-            <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
-              <li class="breadcrumb-item"><a class="breadcrumb-link" href="#0"><i class="bi bi-house icon"></i>خانه</a></li>
-              <li class="breadcrumb-item active">درباره ما</li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </section>
-    <!-- End inner Page hero-->
+    
     <!-- Start  about Section-->
     <section class="about mega-section" id="about">
       <div class="container">
@@ -154,7 +63,7 @@
             </div>
             <div class="col-12 col-lg-6 d-flex align-items-center order-0 order-lg-1 about-col  wow fadeInUp" data-wow-delay="0.2s">
               <div class="img-area" data-tilt>
-                <div class="image"><img class="about-img img-fluid" loading="lazy" src="images/about/3.png" alt="ویژن ما"></div>
+                <div class="image"><img class="about-img img-fluid" loading="lazy" src="{% static 'images/about/3.png'%}" alt="ویژن ما"></div>
  </div>
             </div>
           </div>
@@ -178,7 +87,7 @@
             <div class="col-12 col-md-8  col-lg-4 mx-md-auto">
               <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.1s">
                 <div class="tm-image js-tilt"><a class="tm-link" href="team-member.html"> 
-                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img" loading="lazy" src="images/our-team/1.jpg" alt="اعضای تیم"/></a>
+                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img" loading="lazy" src="{% static 'images/our-team/1.jpg'%}" alt="اعضای تیم"/></a>
                   <div class="tm-social">
                     <div class="sc-wrapper dir-row sc-size-40">
                       <ul class="sc-list">
@@ -198,7 +107,7 @@
             <div class="col-12 col-md-8  col-lg-4 mx-md-auto">
               <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.2s">
                 <div class="tm-image js-tilt"><a class="tm-link" href="team-member.html"> 
-                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img" loading="lazy" src="images/our-team/2.jpg" alt="اعضای تیم"/></a>
+                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img" loading="lazy" src="{% static 'images/our-team/2.jpg'%}" alt="اعضای تیم"/></a>
                   <div class="tm-social">
                     <div class="sc-wrapper dir-row sc-size-40">
                       <ul class="sc-list">
@@ -218,7 +127,7 @@
             <div class="col-12 col-md-8  col-lg-4 mx-md-auto">
               <div class="tm-member-card     wow   fadeInUp" data-wow-delay="0.4s">
                 <div class="tm-image js-tilt"><a class="tm-link" href="team-member.html"> 
-                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img" loading="lazy" src="images/our-team/3.jpg" alt="اعضای تیم"/></a>
+                    <div class="overlay overlay-color"></div><img class="img-fluid parallax-img" loading="lazy" src="{% static 'images/our-team/3.jpg'%}" alt="اعضای تیم"/></a>
                   <div class="tm-social">
                     <div class="sc-wrapper dir-row sc-size-40">
                       <ul class="sc-list">
@@ -241,7 +150,7 @@
     <!-- End  our-team Section-->
     <!-- Start  testimonials-->
     <section class="testimonials testimonials-1-col   has-dark-bg  mega-section" id="testimonials-img-bg">
-      <div class="overlay-photo-image-bg parallax" data-bg-img="images/sections-bg-images/1.jpg" data-bg-opacity=".25"> </div>
+      <div class="overlay-photo-image-bg parallax" data-bg-img="{% static 'images/sections-bg-images/1.jpg'%}" data-bg-opacity=".25"> </div>
       <div class="container">
         <div class="sec-heading  centered">
           <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">گفت و گو ها</span>
@@ -256,7 +165,7 @@
                 <div class="swiper-slide">
                   <div class="testmonial-card d-flex align-items-center justify-content-center">
                     <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/1.png" alt="First Slide"></div>
+                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/1.png'%}" alt="First Slide"></div>
                       <div class="customer-testimonial">
                         <div class="content">
                           <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
@@ -275,7 +184,7 @@
                 <div class="swiper-slide">
                   <div class="testmonial-card d-flex align-items-center justify-content-center">
                     <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/2.png" alt="First Slide"></div>
+                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/2.png'%}" alt="First Slide"></div>
                       <div class="customer-testimonial">
                         <div class="content">
                           <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
@@ -294,7 +203,7 @@
                 <div class="swiper-slide">
                   <div class="testmonial-card d-flex align-items-center justify-content-center">
                     <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/3.png" alt="First Slide"></div>
+                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/3.png'%}" alt="First Slide"></div>
                       <div class="customer-testimonial">
                         <div class="content">
                           <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .            </p>
@@ -344,25 +253,25 @@
               
               -->
               <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/1-white.png" alt=""></a></div>
+                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/1-white.png'%}" alt=""></a></div>
  </div>
               <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/2-white.png" alt=""></a></div>
+                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/2-white.png'%}" alt=""></a></div>
  </div>
               <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/3-white.png" alt=""></a></div>
+                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/3-white.png'%}" alt=""></a></div>
  </div>
               <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/4-white.png" alt=""></a></div>
+                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/4-white.png'%}" alt=""></a></div>
  </div>
               <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/5-white.png" alt=""></a></div>
+                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/5-white.png'%}" alt=""></a></div>
  </div>
               <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/6-white.png" alt=""></a></div>
+                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/6-white.png'%}" alt=""></a></div>
  </div>
               <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/7-white.png" alt=""></a></div>
+                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/7-white.png'%}" alt=""></a></div>
  </div>
             </div>
           </div>
@@ -385,7 +294,7 @@
               <div class="row">
                 <div class="col-12 col-lg-4">
                   <div class="post-box">     <a class="post-link" href="post-single.html" title="چگونه فناوری لایت اسپیدبرای سرعت بخشیدن به سایت شما کار می کند"> 
-                      <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="images/blog/post-images/1.jpg" alt=""/><span class="post-date"><span class="day">05 </span>آذر 1402     </span></div></a>
+                      <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/1.jpg'%}" alt=""/><span class="post-date"><span class="day">05 </span>آذر 1402     </span></div></a>
                     <div class="post-summary">
                       <div class="post-info"><a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>هاستینگ</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>جمشید خارجی</a></div>
                       <div class="post-text"><a class="post-link" href="post-single.html"> 
@@ -397,7 +306,7 @@
    </div>
                 <div class="col-12 col-lg-4">         
                   <div class="post-box">     <a class="post-link" href="post-single.html" title="به وب سایت خود ظاهری جدید و با مضامین ارائه دهید"> 
-                      <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="images/blog/post-images/2.jpg" alt=""/><span class="post-date"><span class="day">15 </span>مهر 1402     </span></div></a>
+                      <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/2.jpg'%}" alt=""/><span class="post-date"><span class="day">15 </span>مهر 1402     </span></div></a>
                     <div class="post-summary">
                       <div class="post-info"><a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>طراحی وب</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>عرفان ایرانی</a></div>
                       <div class="post-text"><a class="post-link" href="post-single.html"> 
@@ -409,7 +318,7 @@
    </div>
                 <div class="col-12 col-lg-4">         
                   <div class="post-box">     <a class="post-link" href="post-single.html" title="نقش نام دامنه در جهان سئو توضیح داده شده است"> 
-                      <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="images/blog/post-images/3.jpg" alt=""/><span class="post-date"><span class="day">27 </span>بهمن 1402     </span></div></a>
+                      <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/3.jpg'%}" alt=""/><span class="post-date"><span class="day">27 </span>بهمن 1402     </span></div></a>
                     <div class="post-summary">
                       <div class="post-info"><a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>سئو</a><a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>یوسف امین</a></div>
                       <div class="post-text"><a class="post-link" href="post-single.html"> 
@@ -428,7 +337,7 @@
     <!-- End  blog Section-->
     <!-- Start  take-action Section-->
     <section class="take-action elf-section has-dark-bg" id="take-action">
-      <div class="overlay-photo-image-bg" data-bg-img="images/sections-bg-images/2.jpg" data-bg-opacity=".25"> </div>
+      <div class="overlay-photo-image-bg" data-bg-img="{% static 'images/sections-bg-images/2.jpg'%}" data-bg-opacity=".25"> </div>
       <div class="cta-wrapper">
         <div class="container">
           <div class="sec-heading  centered mb-0">

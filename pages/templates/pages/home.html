@@ -1,9 +1,10 @@
 {% extends '__base.html' %}
+{% load static %}
 {% block title %}Home{% endblock title %}
 {% block content %}
     <!-- Start  Page hero-->
     <section class="page-hero  d-flex align-items-center  tringle-bg" id="page-hero">
-        <div class="overlay-photo-image-bg" data-bg-img="images/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
+        <div class="overlay-photo-image-bg" data-bg-img="{% static 'images/sections-bg-images/pattern-bg-1.jpg'%}" data-bg-opacity=".2"></div>
         <div class="particles-js  dots" id="particles-js"></div>
         <div class="container">
             <div class="row align-items-center">
@@ -54,7 +55,7 @@
                 <!--start of .image-area -->
                 <div class="col-12   mx-md-auto col-lg-6 text-center" data-tilt>
                     <div class="hero-image-area mb-5 mb-lg-0">
-                        <div class="hero-img-wraper"><img class="img-fluid" src="images/hero/illustration-1.png" alt="" draggable="false"></div>
+                        <div class="hero-img-wraper"><img class="img-fluid" src="{% static 'images/hero/illustration-1.png'%}" alt="" draggable="false"></div>
                     </div>
                 </div>
                 <!--End of .image-area -->
@@ -194,16 +195,12 @@
                                 </div>
                             </div>
                             <div class="cta-area"><a class=" btn-solid reveal-start" href="about-us.html">با ما در ارتباط باشید</a>
-                                <div class="signature">
-                                    <div class="signature-img"></div>
-                                    <div class="signature-name">سئو &amp; موسس </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex align-items-center order-0 order-lg-1 about-col  wow fadeInUp" data-wow-delay="0.2s">
                         <div class="img-area" data-tilt>
-                            <div class="image"><img class="about-img img-fluid" loading="lazy" src="images/about/3.png" alt="ویژن ما"></div>
+                            <div class="image"><img class="about-img img-fluid" loading="lazy" src="{% static 'images/about/3.png'%}" alt="ویژن ما"></div>
                         </div>
                     </div>
                 </div>
@@ -214,7 +211,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s">
                         <div class="img-area">
-                            <div class="image" data-tilt><img class="about-img img-fluid" loading="lazy" src="images/about/1.png" alt="about"></div>
+                            <div class="image" data-tilt><img class="about-img img-fluid" loading="lazy" src="{% static 'images/about/1.png'%}" alt="about"></div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex align-items-center about-col pad-start  wow fadeInUp" data-wow-delay="0.6s">
@@ -264,7 +261,7 @@
     <!-- End  about Section-->
     <!-- Start  stats Section-->
     <section class="stats js-stats-counter mega-section">
-        <div class="overlay-photo-image-bg" data-bg-img="images/sections-bg-images/pattern-bg-3.jpg" data-bg-opacity=".2"></div>
+        <div class="overlay-photo-image-bg" data-bg-img="{% static 'images/sections-bg-images/pattern-bg-3.jpg'%}" data-bg-opacity=".2"></div>
         <div class="container">
             <div class="stats-inner">
                 <div class="row">
@@ -319,7 +316,7 @@
                     <div class="row">
                         <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
                             <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="images/portfolio/1.jpg" alt="نمونه کار item photo" /></a>
+                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/1.jpg'%}" alt="نمونه کار item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">برنامه های موبایل</h3><i class="bi bi-arrow-left icon"></i>
                                 </div>
@@ -327,7 +324,7 @@
                         </div>
                         <div class="col-12  col-md-6  col-lg-4  portfolio-item web">
                             <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="images/portfolio/2.jpg" alt="نمونه کار item photo" /></a>
+                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/2.jpg'%}" alt="نمونه کار item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">فضا</h3><i class="bi bi-arrow-left icon"></i>
                                 </div>
@@ -335,7 +332,7 @@
                         </div>
                         <div class="col-12  col-md-6  col-lg-4  portfolio-item data">
                             <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="images/portfolio/3.jpg" alt="نمونه کار item photo" /></a>
+                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/3.jpg'%}" alt="نمونه کار item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">دیتا آنالیز</h3><i class="bi bi-arrow-left icon"></i>
                                 </div>
@@ -343,7 +340,7 @@
                         </div>
                         <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
                             <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="images/portfolio/4.jpg" alt="نمونه کار item photo" /></a>
+                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/4.jpg'%}" alt="نمونه کار item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">هاستینگ</h3><i class="bi bi-arrow-left icon"></i>
                                 </div>
@@ -351,7 +348,7 @@
                         </div>
                         <div class="col-12  col-md-6  col-lg-4  portfolio-item hosting">
                             <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="images/portfolio/5.jpg" alt="نمونه کار item photo" /></a>
+                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/5.jpg'%}" alt="نمونه کار item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">سئو</h3><i class="bi bi-arrow-left icon"></i>
                                 </div>
@@ -359,7 +356,7 @@
                         </div>
                         <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
                             <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="images/portfolio/6.jpg" alt="نمونه کار item photo" /></a>
+                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/6.jpg'%}" alt="نمونه کار item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">بقیه دسته بندی ها</h3><i class="bi bi-arrow-left icon"></i>
                                 </div>
@@ -390,37 +387,37 @@
               -->
                         <div class="swiper-slide">
                             <div class="client-logo">
-                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/1-white.png" alt=""></a>
+                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/1-white.png'%}" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-logo">
-                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/2-white.png" alt=""></a>
+                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/2-white.png'%}" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-logo">
-                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/3-white.png" alt=""></a>
+                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/3-white.png'%}" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-logo">
-                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/4-white.png" alt=""></a>
+                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/4-white.png'%}" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-logo">
-                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/5-white.png" alt=""></a>
+                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/5-white.png'%}" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-logo">
-                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/6-white.png" alt=""></a>
+                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/6-white.png'%}" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-logo">
-                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="images/clients-logos/7-white.png" alt=""></a>
+                                <a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/7-white.png'%}" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -530,7 +527,7 @@
     <!-- End  pricing Section-->
     <!-- Start  testimonials Section-->
     <section class="testimonials testimonials-1-col   has-dark-bg  mega-section" id="testimonials-img-bg">
-        <div class="overlay-photo-image-bg parallax" data-bg-img="images/sections-bg-images/1.jpg" data-bg-opacity=".25"> </div>
+        <div class="overlay-photo-image-bg parallax" data-bg-img="{% static 'images/sections-bg-images/1.jpg'%}" data-bg-opacity=".25"> </div>
         <div class="container">
             <div class="sec-heading  centered">
                 <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">گفت و گو ها</span>
@@ -545,7 +542,7 @@
                             <div class="swiper-slide">
                                 <div class="testmonial-card d-flex align-items-center justify-content-center">
                                     <div class="testimonial-content">
-                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/1.png" alt="First Slide"></div>
+                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/1.png'%}" alt="First Slide"></div>
                                         <div class="customer-testimonial">
                                             <div class="content">
                                                 <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
@@ -564,7 +561,7 @@
                             <div class="swiper-slide">
                                 <div class="testmonial-card d-flex align-items-center justify-content-center">
                                     <div class="testimonial-content">
-                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/2.png" alt="First Slide"></div>
+                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/2.png'%}" alt="First Slide"></div>
                                         <div class="customer-testimonial">
                                             <div class="content">
                                                 <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
@@ -583,7 +580,7 @@
                             <div class="swiper-slide">
                                 <div class="testmonial-card d-flex align-items-center justify-content-center">
                                     <div class="testimonial-content">
-                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="images/testimonials/3.png" alt="First Slide"></div>
+                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/3.png'%}" alt="First Slide"></div>
                                         <div class="customer-testimonial">
                                             <div class="content">
                                                 <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .
@@ -631,7 +628,7 @@
                             <div class="col-12 col-lg-4">
                                 <div class="post-box">
                                     <a class="post-link" href="post-single.html" title="چگونه فناوری لایت اسپیدبرای سرعت بخشیدن به سایت شما کار می کند">
-                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="images/blog/post-images/1.jpg" alt="" /><span class="post-date"><span class="day">05 </span>آذر 1402 </span>
+                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/1.jpg'%}" alt="" /><span class="post-date"><span class="day">05 </span>آذر 1402 </span>
                                         </div>
                                     </a>
                                     <div class="post-summary">
@@ -651,7 +648,7 @@
                             <div class="col-12 col-lg-4">
                                 <div class="post-box">
                                     <a class="post-link" href="post-single.html" title="به وب سایت خود ظاهری جدید و با مضامین ارائه دهید">
-                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="images/blog/post-images/2.jpg" alt="" /><span class="post-date"><span class="day">15 </span>مهر 1402 </span>
+                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/2.jpg'%}" alt="" /><span class="post-date"><span class="day">15 </span>مهر 1402 </span>
                                         </div>
                                     </a>
                                     <div class="post-summary">
@@ -671,7 +668,7 @@
                             <div class="col-12 col-lg-4">
                                 <div class="post-box">
                                     <a class="post-link" href="post-single.html" title="نقش نام دامنه در جهان سئو توضیح داده شده است">
-                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="images/blog/post-images/3.jpg" alt="" /><span class="post-date"><span class="day">27 </span>بهمن 1402 </span>
+                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/3.jpg'%}" alt="" /><span class="post-date"><span class="day">27 </span>بهمن 1402 </span>
                                         </div>
                                     </a>
                                     <div class="post-summary">
