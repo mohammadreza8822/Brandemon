@@ -10,5 +10,5 @@ urlpatterns = [
     path('our_team/', our_team_page_view, name='our_team'),
     path('pricing/', pricing_page_view, name='pricing'),
     path('services/', services_page_view, name='services'),
-    path('service_detail/', service_detail_page_view, name='service_detail'),
+    path('service_detail/<slug:slug>/', service_detail_page_view, name='service_detail'),
 ]
