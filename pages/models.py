@@ -3,7 +3,7 @@ from django.db import models
 
 class Services(models.Model):
     WEB = 'flaticon-web-development'
-    WEB_2 = '"flaticon-web-domain'
+    WEB_2 = 'flaticon-web-domain'
     TECHNOLOGY = 'flaticon-nanotechnology'
     DEVELOPE = 'flaticon-profile'
     SEO = 'flaticon-search'
