@@ -1,14 +1,17 @@
 from django.urls import path
 
-from .views import home_page_view, about_us_page_view, contact_us_page_view, faq_page_view, our_team_page_view, pricing_page_view, services_page_view, service_detail_page_view
+from . import views
 
 urlpatterns = [
-    path('', home_page_view, name='home'),
-    path('about_us/', about_us_page_view, name='about_us'),
-    path('contact_us/', contact_us_page_view, name='contact_us'),
-    path('faq/', faq_page_view, name='faq'),
-    path('our_team/', our_team_page_view, name='our_team'),
-    path('pricing/', pricing_page_view, name='pricing'),
-    path('services/', services_page_view, name='services'),
-    path('service_detail/<slug:slug>/', service_detail_page_view, name='service_detail'),
+    path('', views.home_page_view, name='home'),
+    path('about_us/', views.about_us_page_view, name='about_us'),
+    path('contact_us/', views.contact_us_page_view, name='contact_us'),
+    path('faq/', views.faq_page_view, name='faq'),
+    path('our_team/', views.our_team_page_view, name='our_team'),
+    path('pricing/', views.pricing_page_view, name='pricing'),
+    path('services/', views.services_page_view, name='services'),
+    path('service_web/', views.service_web_view, name='service_web'),
+    path('service_instagram/', views.service_instagram_view, name='service_instagram'),
+    path('service_video/', views.service_video_view, name='service_video'),
+    path('service_ads/', views.service_ads_view, name='service_ads'),
 ]

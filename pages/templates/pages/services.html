@@ -14,19 +14,50 @@
           <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid">دیدن تمامی خدمات <i class="bi bi-arrow-left icon"></i></a></div>
         </div>
         <div class="row gx-4 gy-4 services-row">            
-          {% for service_item in services %}
-          <!--Start First service box-->
-            <div class="col-12 col-md-6 col-lg-4 mx-auto">
-              <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                <div class='col-md-2 col-lg-6 mx-right'><img class="img-fluid" src='{{service_item.image.url}}'/></div>
-                <div class="service-content">
-                  <h3 class="service-title">{{service_item.title}}</h3>
-                  <p class="service-text">{{service_item.description}}</p>
-                </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
-              </div>
-            </div>      
-          <!-- End First service box   -->
-          {% endfor %}            
+          <!--Web-->
+          <div class="col-12 col-md-6 col-lg-6 mx-auto">
+            <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+              <div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div><span class="service-num hollow-text">3    </span>
+              <div class="service-content">
+                <h3 class="service-title">توسعه وب</h3>
+                <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+              </div><a class="read-more" href="{% url 'service_web'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+            </div>
+          </div>           
+          <!--End Web-->
+          <!--Instagram-->
+          <div class="col-12 col-md-6 col-lg-6 mx-auto">
+            <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+              <div class="service-icon"><i class="flaticon-instagram font-icon"></i></div><span class="service-num hollow-text">3    </span>
+              <div class="service-content">
+                <h3 class="service-title">خدمات اینستاگرام</h3>
+                <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+              </div><a class="read-more" href="{% url 'service_instagram'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+            </div>
+          </div>           
+          <!--End Instagram-->
+          <!--Video-->
+          <div class="col-12 col-md-6 col-lg-6 mx-auto">
+            <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+              <div class="service-icon"><i class="flaticon-photo-camera-vintage font-icon"></i></div><span class="service-num hollow-text">3    </span>
+              <div class="service-content">
+                <h3 class="service-title">خدمات ویدیویی و تصویری</h3>
+                <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+              </div><a class="read-more" href="{% url 'service_video'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+            </div>
+          </div>           
+          <!--End Video-->
+          <!--Ads-->
+          <div class="col-12 col-md-6 col-lg-6 mx-auto">
+            <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+              <div class="service-icon"><i class="flaticon-megaphone font-icon"></i></div><span class="service-num hollow-text">3    </span>
+              <div class="service-content">
+                <h3 class="service-title">تبلیغات</h3>
+                <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+              </div><a class="read-more" href="{% url 'service_ads'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+            </div>
+          </div>           
+          <!--End Ads-->
         </div>
       </div>
     </section>

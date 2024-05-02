@@ -4,7 +4,6 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from .models import Services
 from .serializer import ContactUsSerializer
 
 
@@ -33,5 +32,17 @@ def pricing_page_view(request):
 
 def services_page_view(request):
     return render(request, 'pages/services.html')
+
+def service_web_view(request):
+    return render(request, 'pages/service_web.html')
+
+def service_instagram_view(request):
+    return render(request, 'pages/service_instagram.html')
+
+def service_video_view(request):
+    return render(request, 'pages/service_video.html')
+
+def service_ads_view(request):
+    return render(request, 'pages/service_ads.html')
 
         
