@@ -15,17 +15,17 @@
         </div>
         <div class="row gx-4 gy-4 services-row">            
           {% for service_item in services %}
+          <!--Start First service box-->
             <div class="col-12 col-md-6 col-lg-4 mx-auto">
-            <!--Start First service box-->
-            <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-              <div class="service-icon"><i class="{{service_item.icon}} font-icon"></i></div><span class="service-num hollow-text">1    </span>
+              <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+                <div class='col-md-2 col-lg-6 mx-right'><img class="img-fluid" src='{{service_item.image.url}}'/></div>
                 <div class="service-content">
-                <h3 class="service-title">{{service_item.title}}</h3>
-                <p class="service-text">{{service_item.description}}</p>
-              </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
-            </div>
-            <!-- End First service box   -->
-            </div>            
+                  <h3 class="service-title">{{service_item.title}}</h3>
+                  <p class="service-text">{{service_item.description}}</p>
+                </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+              </div>
+            </div>      
+          <!-- End First service box   -->
           {% endfor %}            
         </div>
       </div>

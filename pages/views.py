@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .models import Services
-from .serializer import ServicesSerializer, ContactUsSerializer
+from .serializer import ContactUsSerializer
 
 
 def home_page_view(request):
@@ -31,17 +31,7 @@ def our_team_page_view(request):
 def pricing_page_view(request):
     return render(request, 'pages/pricing.html')
 
-@api_view()
 def services_page_view(request):
-    if request.method == 'GET':
-        service_queryset = Services.objects.all()
-        serializer = ServicesSerializer(service_queryset, many=True)
-        return render(request, 'pages/services.html', context={'services':serializer.data})
+    return render(request, 'pages/services.html')
 
-@api_view()
-def service_detail_page_view(request, slug):
-    if request.method == 'GET':
-        service_queryset = get_object_or_404(Services.objects.all(), slug=slug)
-        serializer = ServicesSerializer(service_queryset)
-        return Response({'service': serializer.data}, template_name='service_detail.html')
         
