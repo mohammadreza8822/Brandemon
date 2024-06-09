@@ -20,52 +20,22 @@
             <li class="portfolio-btn" data-filter=".data">دیتا آنالیز</li>
             <li class="portfolio-btn" data-filter=".hosting">هاستینگ</li>
           </ul>
-          <div class="portfolio-group wow fadeIn" data-wow-delay=".4s">
-            <div class="row">
-              <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
-                <div class="item"><a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/1.jpg'%}" alt="عکس مورد نمونه کارها"/></a>
-                  <div class="item-info">
-                    <h3 class="item-title">برنامه های موبایل</h3><i class="bi bi-arrow-left icon"></i>
-     </div>
-   </div>
- </div>
-              <div class="col-12  col-md-6  col-lg-4  portfolio-item web">
-                <div class="item"><a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/2.jpg'%}" alt="عکس مورد نمونه کارها"/></a>
-                  <div class="item-info">
-                    <h3 class="item-title">فضا</h3><i class="bi bi-arrow-left icon"></i>
-     </div>
-   </div>
- </div>
-              <div class="col-12  col-md-6  col-lg-4  portfolio-item data">
-                <div class="item"><a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/3.jpg'%}" alt="عکس مورد نمونه کارها"/></a>
-                  <div class="item-info">
-                    <h3 class="item-title">دیتا آنالیز</h3><i class="bi bi-arrow-left icon"></i>
-     </div>
-   </div>
- </div>
-              <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
-                <div class="item"><a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/4.jpg'%}" alt="عکس مورد نمونه کارها"/></a>
-                  <div class="item-info">
-                    <h3 class="item-title">هاستینگ</h3><i class="bi bi-arrow-left icon"></i>
-     </div>
-   </div>
- </div>
-              <div class="col-12  col-md-6  col-lg-4  portfolio-item hosting">
-                <div class="item"><a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/5.jpg'%}" alt="عکس مورد نمونه کارها"/></a>
-                  <div class="item-info">
-                    <h3 class="item-title">سئو</h3><i class="bi bi-arrow-left icon"></i>
-     </div>
-   </div>
- </div>
-              <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
-                <div class="item"><a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/6.jpg'%}" alt="عکس مورد نمونه کارها"/></a>
-                  <div class="item-info">
-                    <h3 class="item-title">بقیه دسته بندی ها</h3><i class="bi bi-arrow-left icon"></i>
-     </div>
-   </div>
- </div>
-            </div>
-          </div>
+          {% for item in portfolios %}
+            <a href="{{ item.get_absolute_url }}">
+              <div class="portfolio-group wow fadeIn" data-wow-delay=".4s">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 portfolio-item">
+                    <div class="item">
+                      <img class="portfolio-img img-fluid" loading="lazy" src="{{ item.cover.url }}" alt="{{ item.title }}"/>
+                      <div class="item-info">
+                        <h3 class="item-title">{{ item.title }}</h3><i class="bi bi-arrow-left icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          {% endfor %}
         </div>
       </div>
     </section>
