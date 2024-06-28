@@ -1,11 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from rest_framework import status
-
-from .serializer import ContactUsSerializer
-
+from .forms import ContactUsForm
+from .models import ContactUs
 
 def home_page_view(request):
     return render(request, 'pages/home.html')
@@ -13,13 +9,17 @@ def home_page_view(request):
 def about_us_page_view(request):
     return render(request, 'pages/about_us.html')
 
-@api_view(['POST'])
 def contact_us_page_view(request):
     if request.method == 'POST':
-        serializer = ContactUsSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return render(request, 'pages/contact_us.html')
+        form = ContactUsForm(request.POST)
+        if form.is_valid():
+            new_comment = form.save(commit=False)
+            new_comment.contact_us = ContactUs()
+            new_comment.save()
+            form = ContactUsForm()
+    else:
+        form = ContactUsForm()
+    return render(request, 'pages/contact_us.html', context={'contact_us_form': form})
 
 def faq_page_view(request):
     return render(request, 'pages/faq.html')

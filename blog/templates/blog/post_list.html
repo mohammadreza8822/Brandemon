@@ -1,0 +1,59 @@
+{% extends '__base.html' %}
+{% load static %}
+{% block title %}Post List{% endblock title %}
+{% block content %}
+    <!-- Start _3-col-left-sidebar-->
+    <section class="blog blog-home mega-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="posts-grid">
+                        <div class="row">
+                            {% for post in posts %}
+                                <div class="col-12 col-lg-4">
+                                    <div class="post-box"><a class="post-link" href="{{ post.get_absolute_url }}"
+                                                            title="چگونه فناوری لایت اسپیدبرای سرعت بخشیدن به سایت شما کار می کند">
+                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy"
+                                                                        src="{{ post.cover.url }}" alt=""/><span
+                                                class="post-date"><span class="day">{{ post.datetime_created }}</span></span></div>
+                                    </a>
+                                        <div class="post-summary">
+                                            <div class="post-info"><a class="info post-cat" href="{{ post.get_absolute_url }}"> <i
+                                                    class="bi bi-bookmark icon"></i>{{ post.category }}</a><a class="info post-author"
+                                                                                                href="{{ post.get_absolute_url }}"> <i
+                                                    class=" bi bi-person icon"></i>{{ post.author }}</a></div>
+                                            <div class="post-text"><a class="post-link" href="{{ post.get_absolute_url }}">
+                                                <h2 class="post-title">{{ post.title }}</h2></a>
+                                                <p class="post-excerpt">{{ post.description }}</p><a class="read-more" href="{{ post.get_absolute_url }}">ادامه
+                                                    مطلب<i class="bi bi-arrow-left icon"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            <div class="col-12">
+                                <!--Start pagination-->
+                                <nav class="ma-pagination">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="ma-page-item deactive-page-item"><a class="ma-page-link" href="#"
+                                                                                       title="صفحه قبل"><i
+                                                class="bi bi-chevron-right icon"></i></a></li>
+                                        <li class="ma-page-item active"><a class="ma-page-link" href="#">1 </a></li>
+                                        <li class="ma-page-item"><a class="ma-page-link" href="#">2 </a></li>
+                                        <li class="ma-page-item"><a class="ma-page-link" href="#">3 </a></li>
+                                        <li class="ma-page-item"><a class="ma-page-link" href="#">4 </a></li>
+                                        <li class="ma-page-item"><a class="ma-page-link" href="#">5 </a></li>
+                                        <li class="ma-page-item"><a class="ma-page-link" href="#">6 </a></li>
+                                        <li class="ma-page-item"><a class="ma-page-link" href="#" title="ارسال پیام"><i
+                                                class="bi bi-chevron-left icon"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End _3-col-left-sidebar-->
+{% endblock content %}
