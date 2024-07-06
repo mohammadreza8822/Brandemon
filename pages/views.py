@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
 from .forms import ContactUsForm
-from .models import ContactUs, OurTeam
+from .models import ContactUs, OurTeam, Faq, Price
 
 def home_page_view(request):
     return render(request, 'pages/home.html')
@@ -22,14 +22,16 @@ def contact_us_page_view(request):
     return render(request, 'pages/contact_us.html', context={'contact_us_form': form})
 
 def faq_page_view(request):
-    return render(request, 'pages/faq.html')
+    faq = Faq.objects.all()
+    return render(request, 'pages/faq.html', context={'faq': faq})
 
 def our_team_page_view(request):
     team = OurTeam.objects.all()
     return render(request, 'pages/our_team.html', context={'ourteam': team})
 
 def pricing_page_view(request):
-    return render(request, 'pages/pricing.html')
+    price = Price.objects.all()
+    return render(request, 'pages/pricing.html', context={'prices': price})
 
 def services_page_view(request):
     return render(request, 'pages/services.html')

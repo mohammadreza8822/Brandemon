@@ -4,250 +4,251 @@
 {% block content %}
     <!-- Start  pricing Section-->
     <section class="pricing mega-section" id="pricing-1">
-      <div class="container">
-        <div class="sec-heading">
-          <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">جداول قیمت گذاری</span>
-            <h2 class=" title   wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>مقرون به صرفه</span> جداول قیمت گذاری</h2>
-            <p class="subtitle   wow fadeInUp" data-wow-delay=".6s">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت <br>بهترین نوع ارتباط با ما ، تلفنی است.</p>
-          </div>
-          <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid " href="pricing.html">دیدن تمامی پلن ها<i class="bi bi-arrow-left icon"></i></a></div>
+        <div class="container">
+            <div class="sec-heading">
+                <div class="content-area"><span class="pre-title  wow fadeInUp"
+                                                data-wow-delay=".2s">جداول قیمت گذاری</span>
+                    <h2 class=" title   wow fadeInUp" data-wow-delay=".4s"><span
+                            class='hollow-text'>مقرون به صرفه</span> جداول قیمت گذاری</h2>
+                    <p class="subtitle   wow fadeInUp" data-wow-delay=".6s">لورم ایپسوم متن ساختگی با تولید سادگی
+                        نامفهوم از صنعت <br>بهترین نوع ارتباط با ما ، تلفنی است.</p>
+                </div>
+            </div>
+            <div class="row">
+                {% for price_item in prices%}
+                    {% if price_item.popular_field == 'popular'%}
+                        <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
+                            <div class="plan   featured  wow fadeInUp" data-wow-delay=".5s">
+                                <div class="plan-head"><i class="flaticon-box plan-icon"></i>
+                                    <h4 class="plane-name">{{price_item.title}}</h4>
+                                    <div class="plan-price">
+                                        <h3 class="price">{{price_item.price}}<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
+                                    </div>
+                                </div>
+                                <div class="plan-details">
+                                    <ul class="plan-list">
+                                        <li class="plan-feat"><span class="feat-text">{{price_item.description}}</span></li>
+                                        {% comment %} <li class="plan-feat"><span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
+                                        <li class="plan-feat"><span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
+                                        <li class="plan-feat"><span class="feat-text"> لورم لپسوم رایگان است برای شما . </span>
+                                        </li>
+                                        <li class="plan-feat"><span class="feat-text"> اضافه شده در سبد. </span></li> {% endcomment %}
+                                    </ul>
+                                </div>
+                                <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن </a></div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
+                            <div class="plan   wow fadeInUp" data-wow-delay=".1s">
+                                <div class="plan-head"><i class="flaticon-box plan-icon"></i>
+                                    <h4 class="plane-name">{{price_item.title}}</h4>
+                                    <div class="plan-price">
+                                        <h3 class="price">{{price_item.price}}<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
+                                    </div>
+                                </div>
+                                <div class="plan-details">
+                                    <ul class="plan-list">
+                                        <li class="plan-feat"><span class="feat-text">{{price_item.description}}</span></li>
+                                        {% comment %} <li class="plan-feat"><span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
+                                        <li class="plan-feat"><span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
+                                        <li class="plan-feat"><span class="feat-text"> لورم لپسوم رایگان است برای شما . </span>
+                                        </li>
+                                        <li class="plan-feat"><span class="feat-text"> اضافه شده در سبد. </span></li> {% endcomment %}
+                                    </ul>
+                                </div>
+                                <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن </a></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
-        <div class="row">
-          <!--First Plan-->
-          <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-            <div class="plan   wow fadeInUp" data-wow-delay=".1s">
-              <div class="plan-head"><i class="flaticon-nft-1 plan-icon"></i>
-                <h4 class="plane-name">پلن رایگان</h4>
-                <div class="plan-price">
-                  <h3 class="price">00<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
-   </div>
- </div>
-              <div class="plan-details">
-                <ul class="plan-list">
-                  <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                </ul>
- </div>
-              <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-            </div>
-          </div>
-          <!--Second-plan-->
-          <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-            <div class="plan   wow fadeInUp" data-wow-delay=".3s">
-              <div class="plan-head"><i class="flaticon-virtual-reality plan-icon"></i>
-                <h4 class="plane-name">پلن استاندارد</h4>
-                <div class="plan-price">
-                  <h3 class="price">85<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
-   </div>
- </div>
-              <div class="plan-details">
-                <ul class="plan-list">
-                  <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                </ul>
- </div>
-              <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-            </div>
-          </div>
-          <!--Third-plan-->
-          <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-            <div class="plan   featured  wow fadeInUp" data-wow-delay=".5s">
-              <div class="plan-head"><i class="flaticon-box plan-icon"></i>
-                <h4 class="plane-name">پلن حرفه ای</h4>
-                <div class="plan-price">
-                  <h3 class="price">150<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
-   </div>
- </div>
-              <div class="plan-details">
-                <ul class="plan-list">
-                  <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                </ul>
- </div>
-              <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-            </div>
-          </div>
-          <!--fourth-plan-->
-          <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-            <div class="plan   wow fadeInUp" data-wow-delay=".6s">
-              <div class="plan-head"><i class="flaticon-basic-shapes plan-icon"></i>
-                <h4 class="plane-name">پلن نامحدود</h4>
-                <div class="plan-price">
-                  <h3 class="price">210<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
-   </div>
- </div>
-              <div class="plan-details">
-                <ul class="plan-list">
-                  <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                  <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                </ul>
- </div>
-              <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- End  pricing Section-->
     <!-- Start  testimonials Section-->
     <section class="testimonials testimonials-1-col   has-dark-bg  mega-section" id="testimonials-img-bg">
-      <div class="overlay-photo-image-bg parallax" data-bg-img="{% static 'images/sections-bg-images/1.jpg'%}" data-bg-opacity=".25"> </div>
-      <div class="container">
-        <div class="sec-heading  centered">
-          <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">گفت و گو ها</span>
-            <h2 class=" title   wow fadeInUp" data-wow-delay=".4s">مشتری ها <span class='hollow-text'>دیدگاه ها</span></h2>
-          </div>
-        </div>
-        <div class="row d-flex align-items-center">
-          <div class="col-12 col-md-10  mx-auto">
-            <div class="swiper-container  wow fadeInUp" data-wow-delay="0.2s">
-              <div class="swiper-wrapper">
-                <!--First Slide-->
-                <div class="swiper-slide">
-                  <div class="testmonial-card d-flex align-items-center justify-content-center">
-                    <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/1.png'%}" alt="First Slide"></div>
-                      <div class="customer-testimonial">
-                        <div class="content">
-                          <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
-           </div>
-         </div>
-                      <div class="customer-info">
-                        <div class="customer-details">
-                          <p class="customer-name">یوسف امین</p>
-                          <p class="customer-role">موسس</p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
-                <!--Second Slide-->
-                <div class="swiper-slide">
-                  <div class="testmonial-card d-flex align-items-center justify-content-center">
-                    <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/2.png'%}" alt="First Slide"></div>
-                      <div class="customer-testimonial">
-                        <div class="content">
-                          <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
-           </div>
-         </div>
-                      <div class="customer-info">
-                        <div class="customer-details">
-                          <p class="customer-name">جمشید ایرانی</p>
-                          <p class="customer-role">دفتر دار</p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
-                <!--third Slide-->
-                <div class="swiper-slide">
-                  <div class="testmonial-card d-flex align-items-center justify-content-center">
-                    <div class="testimonial-content">
-                      <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/3.png'%}" alt="First Slide"></div>
-                      <div class="customer-testimonial">
-                        <div class="content">
-                          <p class="testimonial-text">  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .            </p>
-           </div>
-         </div>
-                      <div class="customer-info">
-                        <div class="customer-details">
-                          <p class="customer-name">فریبرز ایرانی</p>
-                          <p class="customer-role">مدیر</p>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-              <!--navigation buttons-->
-              <div class="swiper-button-prev">
-                <div class="left-arrow"><i class="bi bi-chevron-right icon"></i>
-   </div>
- </div>
-              <div class="swiper-button-next">
-                <div class="right-arrow"><i class="bi bi-chevron-left icon"></i>
-   </div>
- </div>
+        <div class="overlay-photo-image-bg parallax" data-bg-img="{% static 'images/sections-bg-images/1.jpg' %}"
+             data-bg-opacity=".25"></div>
+        <div class="container">
+            <div class="sec-heading  centered">
+                <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">گفت و گو ها</span>
+                    <h2 class=" title   wow fadeInUp" data-wow-delay=".4s">مشتری ها <span
+                            class='hollow-text'>دیدگاه ها</span></h2>
+                </div>
             </div>
-          </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-10  mx-auto">
+                    <div class="swiper-container  wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="swiper-wrapper">
+                            <!--First Slide-->
+                            <div class="swiper-slide">
+                                <div class="testmonial-card d-flex align-items-center justify-content-center">
+                                    <div class="testimonial-content">
+                                        <div class="customer-img"><img class="img-fluid" loading="lazy"
+                                                                       src="{% static 'images/testimonials/1.png' %}"
+                                                                       alt="First Slide"></div>
+                                        <div class="customer-testimonial">
+                                            <div class="content">
+                                                <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                                                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                                    شرایط فعلی تکنولوژی مورد نیاز، و .</p>
+                                            </div>
+                                        </div>
+                                        <div class="customer-info">
+                                            <div class="customer-details">
+                                                <p class="customer-name">یوسف امین</p>
+                                                <p class="customer-role">موسس</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Second Slide-->
+                            <div class="swiper-slide">
+                                <div class="testmonial-card d-flex align-items-center justify-content-center">
+                                    <div class="testimonial-content">
+                                        <div class="customer-img"><img class="img-fluid" loading="lazy"
+                                                                       src="{% static 'images/testimonials/2.png' %}"
+                                                                       alt="First Slide"></div>
+                                        <div class="customer-testimonial">
+                                            <div class="content">
+                                                <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                                                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                                    شرایط فعلی تکنولوژی مورد نیاز، و .</p>
+                                            </div>
+                                        </div>
+                                        <div class="customer-info">
+                                            <div class="customer-details">
+                                                <p class="customer-name">جمشید ایرانی</p>
+                                                <p class="customer-role">دفتر دار</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--third Slide-->
+                            <div class="swiper-slide">
+                                <div class="testmonial-card d-flex align-items-center justify-content-center">
+                                    <div class="testimonial-content">
+                                        <div class="customer-img"><img class="img-fluid" loading="lazy"
+                                                                       src="{% static 'images/testimonials/3.png' %}"
+                                                                       alt="First Slide"></div>
+                                        <div class="customer-testimonial">
+                                            <div class="content">
+                                                <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی
+                                                    نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                                                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                                    شرایط فعلی تکنولوژی مورد نیاز، و . </p>
+                                            </div>
+                                        </div>
+                                        <div class="customer-info">
+                                            <div class="customer-details">
+                                                <p class="customer-name">فریبرز ایرانی</p>
+                                                <p class="customer-role">مدیر</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--navigation buttons-->
+                        <div class="swiper-button-prev">
+                            <div class="left-arrow"><i class="bi bi-chevron-right icon"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <div class="right-arrow"><i class="bi bi-chevron-left icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- End  testimonials Section-->
     <!-- Start  our-clients Section-->
     <section class="our-clients  bg-main elf-section" id="our-clients">
-      <div class="container-fluid">
-        <div class="sec-heading d-none">
-          <h4 class="title">our great clients</h4>
-        </div>
-        <div class=" clients-logos d-flex align-items-center justify-content-around flex-wrap">
-          <!--Swiper-->
-          <div class="swiper-container">
-            <div class="swiper-wrapper clients-logo-wrapper wow fadeIn" data-wow-delay=".02s">
-              <!--                        هر آرم مشتری در داخل Div با کلاس قرار دارد name"swiper-slide".
-              اگر می خواهید آرم های بیشتری اضافه کنید ، لطفاً ساختار Swiper-Slide را مطابق شکل زیر نگه دارید
-              
-              
-              -->
-              
-              
-              -->
-              <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/1-white.png'%}" alt=""></a></div>
- </div>
-              <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/2-white.png'%}" alt=""></a></div>
- </div>
-              <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/3-white.png'%}" alt=""></a></div>
- </div>
-              <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/4-white.png'%}" alt=""></a></div>
- </div>
-              <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/5-white.png'%}" alt=""></a></div>
- </div>
-              <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/6-white.png'%}" alt=""></a></div>
- </div>
-              <div class="swiper-slide">
-                <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy" src="{% static 'images/clients-logos/7-white.png'%}" alt=""></a></div>
- </div>
+        <div class="container-fluid">
+            <div class="sec-heading d-none">
+                <h4 class="title">our great clients</h4>
             </div>
-          </div>
+            <div class=" clients-logos d-flex align-items-center justify-content-around flex-wrap">
+                <!--Swiper-->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper clients-logo-wrapper wow fadeIn" data-wow-delay=".02s">
+                        <!--                        هر آرم مشتری در داخل Div با کلاس قرار دارد name"swiper-slide".
+                        اگر می خواهید آرم های بیشتری اضافه کنید ، لطفاً ساختار Swiper-Slide را مطابق شکل زیر نگه دارید
+
+
+                        -->
+
+
+                        -->
+                        <div class="swiper-slide">
+                            <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy"
+                                                                       src="{% static 'images/clients-logos/1-white.png' %}"
+                                                                       alt=""></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy"
+                                                                       src="{% static 'images/clients-logos/2-white.png' %}"
+                                                                       alt=""></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy"
+                                                                       src="{% static 'images/clients-logos/3-white.png' %}"
+                                                                       alt=""></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy"
+                                                                       src="{% static 'images/clients-logos/4-white.png' %}"
+                                                                       alt=""></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy"
+                                                                       src="{% static 'images/clients-logos/5-white.png' %}"
+                                                                       alt=""></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy"
+                                                                       src="{% static 'images/clients-logos/6-white.png' %}"
+                                                                       alt=""></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo"><a href="#0"><img class="img-fluid logo" loading="lazy"
+                                                                       src="{% static 'images/clients-logos/7-white.png' %}"
+                                                                       alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- End  our-clients Section-->
     <!-- Start  take-action Section-->
     <section class="take-action elf-section has-dark-bg" id="take-action">
-      <div class="overlay-photo-image-bg" data-bg-img="{% static 'images/sections-bg-images/2.jpg'%}" data-bg-opacity=".25"> </div>
-      <div class="cta-wrapper">
-        <div class="container">
-          <div class="sec-heading  centered mb-0">
-            <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">تماس با ما</span>
-              <h2 class=" title   wow fadeInUp" data-wow-delay=".4s">ارتباط با ما</h2>
-              <p class="subtitle   wow fadeInUp" data-wow-delay=".6s">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت <br>بهترین نوع ارتباط با ما ، تلفنی است.</p>
+        <div class="overlay-photo-image-bg" data-bg-img="{% static 'images/sections-bg-images/2.jpg' %}"
+             data-bg-opacity=".25"></div>
+        <div class="cta-wrapper">
+            <div class="container">
+                <div class="sec-heading  centered mb-0">
+                    <div class="content-area"><span class="pre-title  wow fadeInUp"
+                                                    data-wow-delay=".2s">تماس با ما</span>
+                        <h2 class=" title   wow fadeInUp" data-wow-delay=".4s">ارتباط با ما</h2>
+                        <p class="subtitle   wow fadeInUp" data-wow-delay=".6s">لورم ایپسوم متن ساختگی با تولید سادگی
+                            نامفهوم از صنعت <br>بهترین نوع ارتباط با ما ، تلفنی است.</p>
+                    </div>
+                </div>
+                <!--Start .see-more-area-->
+                <div class=" see-more-area wow fadeInUp" data-wow-delay="0.8s"><a class=" btn-solid cta-link"
+                                                                                  href="contact-us.html">تماس با ما</a>
+                </div>
+                <!--End Of .see-more-area        -->
             </div>
-          </div>
-          <!--Start .see-more-area-->
-          <div class=" see-more-area wow fadeInUp" data-wow-delay="0.8s"><a class=" btn-solid cta-link" href="contact-us.html">تماس با ما</a></div>
-          <!--End Of .see-more-area        -->
         </div>
-      </div>
     </section>
     <!-- End  take-action Section-->
 {% endblock content %}
