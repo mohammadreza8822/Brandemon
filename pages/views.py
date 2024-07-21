@@ -1,10 +1,27 @@
 from django.shortcuts import render, get_object_or_404
 
+from portfolio.models import Portfolio, Category
+from blog.models import Comment
+from blog.models import Post
 from .forms import ContactUsForm
 from .models import ContactUs, OurTeam, Faq, Price
 
 def home_page_view(request):
-    return render(request, 'pages/home.html')
+    categories = Category.objects.all()
+    category_id = request.GET.get('category')
+    price = Price.objects.all()
+    post = Post.objects.all()
+    comment = Comment.objects.order_by('-datetime_created').all()
+    if category_id:
+        portfolio_items = Portfolio.objects.filter(category_id=category_id)
+    else:
+        portfolio_items = Portfolio.objects.all()
+    return render(request, 'pages/home.html', context={'prices': price,
+                                                       'posts': post,
+                                                        'comments': comment,
+                                                        'categories': categories,
+                                                        'portfolio_items': portfolio_items,
+                                                        'selected_category': category_id})
 
 def about_us_page_view(request):
     return render(request, 'pages/about_us.html')

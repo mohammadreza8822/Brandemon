@@ -71,75 +71,53 @@
                     <h2 class=" title   wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>خدمات</span> ما تخفیف داریم</h2>
                     <p class="subtitle   wow fadeInUp" data-wow-delay=".6s">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت <br>بهترین نوع ارتباط با ما ، تلفنی است.</p>
                 </div>
-                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid">دیدن تمامی خدمات <i class="bi bi-arrow-left icon"></i></a></div>
+                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid" href="{%url 'services'%}">دیدن تمامی خدمات <i class="bi bi-arrow-left icon"></i></a></div>
             </div>
             <div class="row gx-4 gy-4 services-row">
-                <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                    <!--Start First service box-->
-                    <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
-                        <div class="service-icon"><i class="flaticon-web-development font-icon"></i></div><span class="service-num hollow-text">1    </span>
-                        <div class="service-content">
-                            <h3 class="service-title">توسعه وب</h3>
-                            <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
-                        </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
-                    </div>
-                    <!-- End First service box   -->
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                    <!--Start Second service box-->
-                    <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".2s">
-                        <div class="service-icon"><i class="flaticon-nanotechnology font-icon"></i></div><span class="service-num hollow-text">2    </span>
-                        <div class="service-content">
-                            <h3 class="service-title">دیجیتال مارکتینگ</h3>
-                            <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
-                        </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
-                    </div>
-                    <!-- End Second service box-->
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                    <!--Start Third service box-->
+                <!--Web-->
+                <div class="col-12 col-md-6 col-lg-6 mx-auto">
                     <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
-                        <div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div><span class="service-num hollow-text">3    </span>
-                        <div class="service-content">
-                            <h3 class="service-title">محصولات SaaS </h3>
-                            <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
-                        </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+                    <div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div><span class="service-num hollow-text">3    </span>
+                    <div class="service-content">
+                        <h3 class="service-title">توسعه وب</h3>
+                        <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+                    </div><a class="read-more" href="{% url 'service_web'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
                     </div>
-                    <!-- End Third service box-->
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                    <!--Start fourth service box-->
-                    <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".4s">
-                        <div class="service-icon"><i class="flaticon-profile font-icon"></i></div><span class="service-num hollow-text">4    </span>
-                        <div class="service-content">
-                            <h3 class="service-title">توسعه برنامه ها</h3>
-                            <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
-                        </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+                </div>           
+                <!--End Web-->
+                <!--Instagram-->
+                <div class="col-12 col-md-6 col-lg-6 mx-auto">
+                    <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+                    <div class="service-icon"><i class="flaticon-instagram font-icon"></i></div><span class="service-num hollow-text">3    </span>
+                    <div class="service-content">
+                        <h3 class="service-title">خدمات اینستاگرام</h3>
+                        <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+                    </div><a class="read-more" href="{% url 'service_instagram'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
                     </div>
-                    <!-- End fourth service box   -->
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                    <!--Start 5th service box-->
-                    <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".5s">
-                        <div class="service-icon"><i class="flaticon-search font-icon"></i></div><span class="service-num hollow-text">5    </span>
-                        <div class="service-content">
-                            <h3 class="service-title">خدمات سئو</h3>
-                            <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
-                        </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+                </div>           
+                <!--End Instagram-->
+                <!--Video-->
+                <div class="col-12 col-md-6 col-lg-6 mx-auto">
+                    <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+                    <div class="service-icon"><i class="flaticon-photo-camera-vintage font-icon"></i></div><span class="service-num hollow-text">3    </span>
+                    <div class="service-content">
+                        <h3 class="service-title">خدمات ویدیویی و تصویری</h3>
+                        <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+                    </div><a class="read-more" href="{% url 'service_video'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
                     </div>
-                    <!-- End 5th service box-->
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                    <!--Start 6th service box-->
-                    <div class="box service-box wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".6s">
-                        <div class="service-icon"><i class="flaticon-strategy font-icon"></i></div><span class="service-num hollow-text">6    </span>
-                        <div class="service-content">
-                            <h3 class="service-title">آنالیز دیتا ها</h3>
-                            <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
-                        </div><a class="read-more" href="service-single.html">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+                </div>           
+                <!--End Video-->
+                <!--Ads-->
+                <div class="col-12 col-md-6 col-lg-6 mx-auto">
+                    <div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+                    <div class="service-icon"><i class="flaticon-megaphone font-icon"></i></div><span class="service-num hollow-text">3    </span>
+                    <div class="service-content">
+                        <h3 class="service-title">تبلیغات</h3>
+                        <p class="service-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که.</p>
+                    </div><a class="read-more" href="{% url 'service_ads'%}">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
                     </div>
-                    <!-- End 6th service box-->
-                </div>
+                </div>           
+                <!--End Ads-->
             </div>
         </div>
     </section>
@@ -194,7 +172,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cta-area"><a class=" btn-solid reveal-start" href="about-us.html">با ما در ارتباط باشید</a>
+                            <div class="cta-area"><a class=" btn-solid reveal-start" href="{% url 'about_us' %}">با ما در ارتباط باشید</a>
                             </div>
                         </div>
                     </div>
@@ -250,7 +228,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cta-area"><a class=" btn-solid" href="about-us.html">با ما در ارتباط باشید</a></div>
+                            <div class="cta-area"><a class=" btn-solid" href="{% url 'about_us' %}">با ما در ارتباط باشید</a></div>
                         </div>
                     </div>
                 </div>
@@ -299,72 +277,43 @@
         <div class="container">
             <div class="sec-heading">
                 <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">نمونه کار</span>
-                    <h2 class=" title   wow fadeInUp" data-wow-delay=".4s">عالی <span class='hollow-text'>نمونه کار</span></h2>
+                    <h2 class=" title   wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>نمونه کار</span></h2>
                 </div>
-                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid " href="portfolio-grid.html">بیشتر ببینید <i class="bi bi-arrow-left icon"></i></a></div>
+                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid " href="{% url 'portfolio_list'%}">بیشتر ببینید <i class="bi bi-arrow-left icon"></i></a></div>
             </div>
             <div class="portfolio-wrapper">
                 <!--a menu of links to show the photos users needs   -->
                 <ul class="portfolio-btn-list wow fadeInUp" data-wow-delay=".2s">
-                    <li class="portfolio-btn active" data-filter="*">همه</li>
-                    <li class="portfolio-btn" data-filter=".mobile">برنامه های موبایل</li>
-                    <li class="portfolio-btn" data-filter=".web">کلود</li>
-                    <li class="portfolio-btn" data-filter=".data">دیتا آنالیز</li>
-                    <li class="portfolio-btn" data-filter=".hosting">هاستینگ</li>
+                  <li class="portfolio-btn active" data-filter="*">
+                    <a href="{% url 'portfolio_list' %}" {% if not selected_category %}class="active"{% endif %}>
+                      همه
+                    </a>
+                  </li>
+                  {% for category in categories %}
+                    <li class="portfolio-btn">
+                      <a href="{% url 'portfolio_list' %}?category={{ category.id }}" {% if not selected_category %}class="active"{% endif %}>
+                          {{ category.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
                 </ul>
-                <div class="portfolio-group wow fadeIn" data-wow-delay=".4s">
-                    <div class="row">
-                        <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
-                            <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/1.jpg'%}" alt="نمونه کار item photo" /></a>
-                                <div class="item-info">
-                                    <h3 class="item-title">برنامه های موبایل</h3><i class="bi bi-arrow-left icon"></i>
-                                </div>
+                {% for item in portfolio_items %}
+                  <a href="{{ item.get_absolute_url }}">
+                    <div class="portfolio-group wow fadeIn" data-wow-delay=".4s">
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 portfolio-item">
+                          <div class="item">
+                            <img class="portfolio-img img-fluid" loading="lazy" src="{{ item.cover.url }}" alt="{{ item.title }}"/>
+                            <div class="item-info">
+                              <h3 class="item-title">{{ item.title }}</h3><i class="bi bi-arrow-left icon"></i>
                             </div>
+                          </div>
                         </div>
-                        <div class="col-12  col-md-6  col-lg-4  portfolio-item web">
-                            <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/2.jpg'%}" alt="نمونه کار item photo" /></a>
-                                <div class="item-info">
-                                    <h3 class="item-title">فضا</h3><i class="bi bi-arrow-left icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12  col-md-6  col-lg-4  portfolio-item data">
-                            <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/3.jpg'%}" alt="نمونه کار item photo" /></a>
-                                <div class="item-info">
-                                    <h3 class="item-title">دیتا آنالیز</h3><i class="bi bi-arrow-left icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
-                            <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/4.jpg'%}" alt="نمونه کار item photo" /></a>
-                                <div class="item-info">
-                                    <h3 class="item-title">هاستینگ</h3><i class="bi bi-arrow-left icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12  col-md-6  col-lg-4  portfolio-item hosting">
-                            <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/5.jpg'%}" alt="نمونه کار item photo" /></a>
-                                <div class="item-info">
-                                    <h3 class="item-title">سئو</h3><i class="bi bi-arrow-left icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
-                            <div class="item">
-                                <a class="portfolio-img-link" href="portfolio-single.html"><img class="portfolio-img img-fluid" loading="lazy" src="{% static 'images/portfolio/6.jpg'%}" alt="نمونه کار item photo" /></a>
-                                <div class="item-info">
-                                    <h3 class="item-title">بقیه دسته بندی ها</h3><i class="bi bi-arrow-left icon"></i>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </a>
+                {% endfor %}
+              </div>
         </div>
     </section>
     <!-- End  portfolio-slider Section-->
@@ -432,95 +381,47 @@
             <div class="sec-heading">
                 <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">جداول قیمت گذاری</span>
                     <h2 class=" title   wow fadeInUp" data-wow-delay=".4s"><span class='hollow-text'>مقرون به صرفه</span> جداول قیمت گذاری</h2>
-                    <p class="subtitle   wow fadeInUp" data-wow-delay=".6s">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت <br>بهترین نوع ارتباط با ما ، تلفنی است.</p>
                 </div>
-                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid " href="pricing.html">دیدن تمامی پلن ها<i class="bi bi-arrow-left icon"></i></a></div>
+                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid " href="{% url 'pricing' %}">دیدن تمامی پلن ها<i class="bi bi-arrow-left icon"></i></a></div>
             </div>
             <div class="row">
-                <!--First Plan-->
-                <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-                    <div class="plan   wow fadeInUp" data-wow-delay=".1s">
-                        <div class="plan-head"><i class="flaticon-nft-1 plan-icon"></i>
-                            <h4 class="plane-name">پلن رایگان</h4>
-                            <div class="plan-price">
-                                <h3 class="price">00<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
+                {% for price_item in prices%}
+                    {% if price_item.popular_field == 'popular'%}
+                        <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
+                            <div class="plan   featured  wow fadeInUp" data-wow-delay=".5s">
+                                <div class="plan-head"><i class="flaticon-box plan-icon"></i>
+                                    <h4 class="plane-name">{{price_item.title}}</h4>
+                                    <div class="plan-price">
+                                        <h3 class="price">{{price_item.price}}<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
+                                    </div>
+                                </div>
+                                <div class="plan-details">
+                                    <ul class="plan-list">
+                                        <li class="plan-feat"><span class="feat-text">{{price_item.description}}</span></li>
+                                    </ul>
+                                </div>
+                                <div class="plan-cta"><a class="cta-btn btn-outline" href="{% url 'contact_us' %}">انتخاب پلن </a></div>
                             </div>
                         </div>
-                        <div class="plan-details">
-                            <ul class="plan-list">
-                                <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                            </ul>
-                        </div>
-                        <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-                    </div>
-                </div>
-                <!--Second-plan-->
-                <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-                    <div class="plan   wow fadeInUp" data-wow-delay=".3s">
-                        <div class="plan-head"><i class="flaticon-virtual-reality plan-icon"></i>
-                            <h4 class="plane-name">پلن استاندارد</h4>
-                            <div class="plan-price">
-                                <h3 class="price">85<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
+                    {% else %}
+                        <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
+                            <div class="plan   wow fadeInUp" data-wow-delay=".1s">
+                                <div class="plan-head"><i class="flaticon-box plan-icon"></i>
+                                    <h4 class="plane-name">{{price_item.title}}</h4>
+                                    <div class="plan-price">
+                                        <h3 class="price">{{price_item.price}}<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
+                                    </div>
+                                </div>
+                                <div class="plan-details">
+                                    <ul class="plan-list">
+                                        <li class="plan-feat"><span class="feat-text">{{price_item.description}}</span></li>
+                                    </ul>
+                                </div>
+                                <div class="plan-cta"><a class="cta-btn btn-outline" href="{% url 'contact_us' %}">انتخاب پلن </a></div>
                             </div>
                         </div>
-                        <div class="plan-details">
-                            <ul class="plan-list">
-                                <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                            </ul>
-                        </div>
-                        <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-                    </div>
-                </div>
-                <!--Third-plan-->
-                <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-                    <div class="plan   featured  wow fadeInUp" data-wow-delay=".5s">
-                        <div class="plan-head"><i class="flaticon-box plan-icon"></i>
-                            <h4 class="plane-name">پلن حرفه ای</h4>
-                            <div class="plan-price">
-                                <h3 class="price">150<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
-                            </div>
-                        </div>
-                        <div class="plan-details">
-                            <ul class="plan-list">
-                                <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                            </ul>
-                        </div>
-                        <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-                    </div>
-                </div>
-                <!--fourth-plan-->
-                <div class="col-12  col-md-6 col-xl-3  mx-auto price-plan">
-                    <div class="plan   wow fadeInUp" data-wow-delay=".6s">
-                        <div class="plan-head"><i class="flaticon-basic-shapes plan-icon"></i>
-                            <h4 class="plane-name">پلن نامحدود</h4>
-                            <div class="plan-price">
-                                <h3 class="price">210<sup class="currency-symbol">تومان</sup></h3><span class="per">هر پروژه</span>
-                            </div>
-                        </div>
-                        <div class="plan-details">
-                            <ul class="plan-list">
-                                <li class="plan-feat"> <span class="feat-text"> 150 مشتری: بسیار دردناک. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> لورم لپسوم رایگان است برای شما . </span></li>
-                                <li class="plan-feat"> <span class="feat-text"> اضافه شده در سبد. </span></li>
-                            </ul>
-                        </div>
-                        <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن  </a></div>
-                    </div>
-                </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -538,64 +439,26 @@
                 <div class="col-12 col-md-10  mx-auto">
                     <div class="swiper-container  wow fadeInUp" data-wow-delay="0.2s">
                         <div class="swiper-wrapper">
-                            <!--First Slide-->
-                            <div class="swiper-slide">
-                                <div class="testmonial-card d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-content">
-                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/1.png'%}" alt="First Slide"></div>
-                                        <div class="customer-testimonial">
-                                            <div class="content">
-                                                <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
+                            {% for comment in comments|slice:'3' %}
+                                <div class="swiper-slide">
+                                    <div class="testmonial-card d-flex align-items-center justify-content-center">
+                                        <div class="testimonial-content">
+                                            <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/1.png'%}" alt="First Slide"></div>
+                                            <div class="customer-testimonial">
+                                                <div class="content">
+                                                    <p class="testimonial-text">{{comment.body}}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="customer-info">
-                                            <div class="customer-details">
-                                                <p class="customer-name">یوسف امین</p>
-                                                <p class="customer-role">موسس</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Second Slide-->
-                            <div class="swiper-slide">
-                                <div class="testmonial-card d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-content">
-                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/2.png'%}" alt="First Slide"></div>
-                                        <div class="customer-testimonial">
-                                            <div class="content">
-                                                <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .</p>
-                                            </div>
-                                        </div>
-                                        <div class="customer-info">
-                                            <div class="customer-details">
-                                                <p class="customer-name">جمشید ایرانی</p>
-                                                <p class="customer-role">دفتر دار</p>
+                                            <div class="customer-info">
+                                                <div class="customer-details">
+                                                    <p class="customer-name">{{comment.author}}</p>
+                                                    {% comment %} <p class="customer-role">موسس</p> {% endcomment %}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--third Slide-->
-                            <div class="swiper-slide">
-                                <div class="testmonial-card d-flex align-items-center justify-content-center">
-                                    <div class="testimonial-content">
-                                        <div class="customer-img"><img class="img-fluid" loading="lazy" src="{% static 'images/testimonials/3.png'%}" alt="First Slide"></div>
-                                        <div class="customer-testimonial">
-                                            <div class="content">
-                                                <p class="testimonial-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .
-                                                    </p>
-                                            </div>
-                                        </div>
-                                        <div class="customer-info">
-                                            <div class="customer-details">
-                                                <p class="customer-name">فریبرز ایرانی</p>
-                                                <p class="customer-role">مدیر</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                         <!--navigation buttons-->
                         <div class="swiper-button-prev">
@@ -619,72 +482,34 @@
                 <div class="content-area"><span class="pre-title  wow fadeInUp" data-wow-delay=".2s">بلاگ</span>
                     <h2 class=" title   wow fadeInUp" data-wow-delay=".4s">آخرین <span class='hollow-text'> خبر ها</span></h2>
                 </div>
-                <div class=" cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid   cta-btn btn-solid" href="blog-home-3-col.html">دیدن تمامی پست ها<i class="bi bi-arrow-left icon"></i></a></div>
+                <div class=" cta-area  cta-area  wow fadeInUp" data-wow-delay=".8s"><a class="cta-btn btn-solid   cta-btn btn-solid" href="{% url 'post_list' %}">دیدن تمامی پست ها<i class="bi bi-arrow-left icon"></i></a></div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="posts-grid">
                         <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div class="post-box">
-                                    <a class="post-link" href="post-single.html" title="چگونه فناوری لایت اسپیدبرای سرعت بخشیدن به سایت شما کار می کند">
-                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/1.jpg'%}" alt="" /><span class="post-date"><span class="day">05 </span>آذر 1402 </span>
-                                        </div>
+                            {% for post in posts %}
+                                <div class="col-12 col-lg-4">
+                                    <div class="post-box"><a class="post-link" href="{{ post.get_absolute_url }}"
+                                                            title="چگونه فناوری لایت اسپیدبرای سرعت بخشیدن به سایت شما کار می کند">
+                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy"
+                                                                        src="{{ post.cover.url }}" alt=""/><span
+                                                class="post-date"><span class="day">{{ post.datetime_created }}</span></span></div>
                                     </a>
-                                    <div class="post-summary">
-                                        <div class="post-info">
-                                            <a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>هاستینگ</a>
-                                            <a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>جمشید خارجی</a>
-                                        </div>
-                                        <div class="post-text">
-                                            <a class="post-link" href="post-single.html">
-                                                <h2 class="post-title"> چگونه فناوری لایت اسپیدبرای سرعت بخشیدن به سایت شما کار می کند </h2>
-                                            </a>
-                                            <p class="post-excerpt">شاید جالب باشد ولی هست, بهترین روش پاراگراف نویسی و متن پیشفرض این است</p><a class="read-more" href="post-single.html" title="چگونه فناوری لایت اسپیدبرای سرعت بخشیدن به سایت شما کار می کند">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
+                                        <div class="post-summary">
+                                            <div class="post-info"><a class="info post-cat" href="{{ post.get_absolute_url }}"> <i
+                                                    class="bi bi-bookmark icon"></i>{{ post.category }}</a><a class="info post-author"
+                                                                                                href="{{ post.get_absolute_url }}"> <i
+                                                    class=" bi bi-person icon"></i>{{ post.author }}</a></div>
+                                            <div class="post-text"><a class="post-link" href="{{ post.get_absolute_url }}">
+                                                <h2 class="post-title">{{ post.title }}</h2></a>
+                                                <p class="post-excerpt">{{ post.description }}</p><a class="read-more" href="{{ post.get_absolute_url }}">ادامه
+                                                    مطلب<i class="bi bi-arrow-left icon"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="post-box">
-                                    <a class="post-link" href="post-single.html" title="به وب سایت خود ظاهری جدید و با مضامین ارائه دهید">
-                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/2.jpg'%}" alt="" /><span class="post-date"><span class="day">15 </span>مهر 1402 </span>
-                                        </div>
-                                    </a>
-                                    <div class="post-summary">
-                                        <div class="post-info">
-                                            <a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>طراحی وب</a>
-                                            <a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>عرفان ایرانی</a>
-                                        </div>
-                                        <div class="post-text">
-                                            <a class="post-link" href="post-single.html">
-                                                <h2 class="post-title"> به وب سایت خود ظاهری جدید و با مضامین ارائه دهید</h2>
-                                            </a>
-                                            <p class="post-excerpt">شاید جالب باشد ولی هست, بهترین روش پاراگراف نویسی و متن پیشفرض این است</p><a class="read-more" href="post-single.html" title="به وب سایت خود ظاهری جدید و با مضامین ارائه دهید">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="post-box">
-                                    <a class="post-link" href="post-single.html" title="نقش نام دامنه در جهان سئو توضیح داده شده است">
-                                        <div class="post-img-wrapper"><img class=" parallax-img   post-img" loading="lazy" src="{% static 'images/blog/post-images/3.jpg'%}" alt="" /><span class="post-date"><span class="day">27 </span>بهمن 1402 </span>
-                                        </div>
-                                    </a>
-                                    <div class="post-summary">
-                                        <div class="post-info">
-                                            <a class="info post-cat" href="#"> <i class="bi bi-bookmark icon"></i>سئو</a>
-                                            <a class="info post-author" href="#"> <i class=" bi bi-person icon"></i>یوسف امین</a>
-                                        </div>
-                                        <div class="post-text">
-                                            <a class="post-link" href="post-single.html">
-                                                <h2 class="post-title"> نقش نام دامنه در جهان سئو توضیح داده شده است </h2>
-                                            </a>
-                                            <p class="post-excerpt">شاید جالب باشد ولی هست, بهترین روش پاراگراف نویسی و متن پیشفرض این است</p><a class="read-more" href="post-single.html" title="نقش نام دامنه در جهان سئو توضیح داده شده است">ادامه مطلب<i class="bi bi-arrow-left icon"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

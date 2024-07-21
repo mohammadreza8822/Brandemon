@@ -14,13 +14,20 @@
         <div class="portfolio-wrapper">
           <!--a menu of links to show the photos users needs   -->
           <ul class="portfolio-btn-list wow fadeInUp" data-wow-delay=".2s">
-            <li class="portfolio-btn active" data-filter="*">همه</li>
-            <li class="portfolio-btn" data-filter=".mobile">برنامه های موبایل</li>
-            <li class="portfolio-btn" data-filter=".web">کلود</li>
-            <li class="portfolio-btn" data-filter=".data">دیتا آنالیز</li>
-            <li class="portfolio-btn" data-filter=".hosting">هاستینگ</li>
+            <li class="portfolio-btn active" data-filter="*">
+              <a href="{% url 'portfolio_list' %}" {% if not selected_category %}class="active"{% endif %}>
+                همه
+              </a>
+            </li>
+            {% for category in categories %}
+              <li class="portfolio-btn">
+                <a href="{% url 'portfolio_list' %}?category={{ category.id }}" {% if not selected_category %}class="active"{% endif %}>
+                    {{ category.title }}
+                </a>
+              </li>
+            {% endfor %}
           </ul>
-          {% for item in portfolios %}
+          {% for item in portfolio_items %}
             <a href="{{ item.get_absolute_url }}">
               <div class="portfolio-group wow fadeIn" data-wow-delay=".4s">
                 <div class="row">

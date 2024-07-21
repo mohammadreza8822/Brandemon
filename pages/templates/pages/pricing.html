@@ -28,14 +28,9 @@
                                 <div class="plan-details">
                                     <ul class="plan-list">
                                         <li class="plan-feat"><span class="feat-text">{{price_item.description}}</span></li>
-                                        {% comment %} <li class="plan-feat"><span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                                        <li class="plan-feat"><span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                                        <li class="plan-feat"><span class="feat-text"> لورم لپسوم رایگان است برای شما . </span>
-                                        </li>
-                                        <li class="plan-feat"><span class="feat-text"> اضافه شده در سبد. </span></li> {% endcomment %}
                                     </ul>
                                 </div>
-                                <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن </a></div>
+                                <div class="plan-cta"><a class="cta-btn btn-outline" href="{% url 'contact_us' %}">انتخاب پلن </a></div>
                             </div>
                         </div>
                     {% else %}
@@ -50,14 +45,9 @@
                                 <div class="plan-details">
                                     <ul class="plan-list">
                                         <li class="plan-feat"><span class="feat-text">{{price_item.description}}</span></li>
-                                        {% comment %} <li class="plan-feat"><span class="feat-text"> 20 شاید جالب باشد ولی هست . </span></li>
-                                        <li class="plan-feat"><span class="feat-text"> شاید جالب باشد ولی هست. </span></li>
-                                        <li class="plan-feat"><span class="feat-text"> لورم لپسوم رایگان است برای شما . </span>
-                                        </li>
-                                        <li class="plan-feat"><span class="feat-text"> اضافه شده در سبد. </span></li> {% endcomment %}
                                     </ul>
                                 </div>
-                                <div class="plan-cta"><a class="cta-btn btn-outline" href="#0">انتخاب پلن </a></div>
+                                <div class="plan-cta"><a class="cta-btn btn-outline" href="{% url 'contact_us' %}">انتخاب پلن </a></div>
                             </div>
                         </div>
                     {% endif %}

@@ -7,6 +7,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.PortfolioListView.as_view(), name='portfolio_list'),
+    path('', views.portfolio_list, name='portfolio_list'),
     path('<slug:slug>/', views.PortfolioDetailView.as_view(), name='portfolio_detail')
 ]
